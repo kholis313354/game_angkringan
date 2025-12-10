@@ -1,0 +1,138 @@
+.start-screen {
+  width: 100%;
+  height: 100%;
+  background-image: url('/img/background.png');
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+.start-content {
+  background: rgba(0, 0, 0, 0.7);
+  padding: 40px;
+  border-radius: 20px;
+  text-align: center;
+  color: white;
+  max-width: 500px;
+  width: 90%;
+  max-height: 90vh;
+  overflow-y: auto;
+}
+
+.game-title {
+  font-size: 3em;
+  margin-bottom: 10px;
+  color: #ffd700;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8);
+}
+
+.game-subtitle {
+  font-size: 1.2em;
+  margin-bottom: 30px;
+  color: #fff;
+}
+
+/* Responsive styles */
+@media (max-width: 768px) {
+  .start-content {
+    padding: 30px 20px;
+    max-width: 95%;
+  }
+  
+  .game-title {
+    font-size: 2em;
+  }
+  
+  .game-subtitle {
+    font-size: 1em;
+    margin-bottom: 20px;
+  }
+  
+  .name-input {
+    padding: 12px;
+    font-size: 1em;
+  }
+  
+  .start-button {
+    padding: 12px 25px;
+    font-size: 1.1em;
+  }
+}
+
+@media (max-width: 480px) {
+  .start-content {
+    padding: 20px 15px;
+  }
+  
+  .game-title {
+    font-size: 1.5em;
+  }
+  
+  .game-subtitle {
+    font-size: 0.9em;
+    margin-bottom: 15px;
+  }
+  
+  .name-form {
+    gap: 10px;
+    margin-bottom: 20px;
+  }
+  
+  .name-input {
+    padding: 10px;
+    font-size: 0.9em;
+  }
+  
+  .start-button {
+    padding: 10px 20px;
+    font-size: 1em;
+  }
+}
+
+.name-form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  margin-bottom: 30px;
+}
+
+.name-input {
+  padding: 15px;
+  font-size: 1.1em;
+  border: 2px solid #ffd700;
+  border-radius: 10px;
+  background: rgba(255, 255, 255, 0.9);
+  color: #000;
+  text-align: center;
+}
+
+.name-input:focus {
+  outline: none;
+  border-color: #ffed4e;
+  box-shadow: 0 0 10px rgba(255, 215, 0, 0.5);
+}
+
+.start-button {
+  padding: 15px 30px;
+  font-size: 1.2em;
+  background: linear-gradient(135deg, #ff6b6b, #ee5a6f);
+  color: white;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  font-weight: bold;
+  transition: all 0.3s;
+}
+
+.start-button:hover {
+  transform: scale(1.05);
+  box-shadow: 0 5px 15px rgba(255, 107, 107, 0.4);
+}
+
+.start-button:active {
+  transform: scale(0.98);
+}
+
