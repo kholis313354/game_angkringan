@@ -379,9 +379,9 @@ function GameScreen({ playerName, onGameOver }) {
   // Initialize and play background music
   useEffect(() => {
     // Create audio elements
-    backsoundRef.current = new Audio('/sound/backsound.mp3')
-    eatSoundRef.current = new Audio('/sound/memakan.mp3')
-    gameOverSoundRef.current = new Audio('/sound/gameover.mp3')
+    backsoundRef.current = new Audio('/game_angkringan/sound/backsound.mp3')
+    eatSoundRef.current = new Audio('/game_angkringan/sound/memakan.mp3')
+    gameOverSoundRef.current = new Audio('/game_angkringan/sound/gameover.mp3')
     
     // Set background music to loop
     backsoundRef.current.loop = true
@@ -457,7 +457,7 @@ function GameScreen({ playerName, onGameOver }) {
               }}
             >
               <img
-                src={`/img/${item.type}`}
+                src={`/game_angkringan/img/${item.type}`}
                 alt={(item.isStone || (item.isManipulation && item.manipulated)) ? 'batu' : 'makanan'}
                 style={{
                   width: '100%',
@@ -479,7 +479,7 @@ function GameScreen({ playerName, onGameOver }) {
             }}
           >
             <img
-              src={`/img/${characterImage}`}
+              src={`/game_angkringan/img/${characterImage}`}
               alt="character"
               style={{
                 width: '100%',

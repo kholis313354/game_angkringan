@@ -3,6 +3,6 @@ import react from '@vitejs/plugin-react'
 
 export default defineConfig({
   plugins: [react()],
-  base: './', // Use relative paths for GitHub Pages
+  base: '/game_angkringan/', // Ganti dengan nama repository GitHub Anda
 })
 
